@@ -21,7 +21,7 @@ function RestaurantesPage() {
   }, []);
 
   return (
-    <Container class="restaurantes">
+    <Container className="restaurantes">
       <Typography variant="h5" align="center" color="primary" className="title">
         RESTAURANTES: {nomeCategoria}
       </Typography>
@@ -36,8 +36,28 @@ function RestaurantesPage() {
         </Typography>
       </div>
       {restaurantesBaratinho?.map(restaurante => (
-        <div key={restaurante.id}>
-          {restaurante.nome}
+        <div key={restaurante.ID}>
+          {restaurante.name}
+        </div>
+      ))}
+      <div className="sub-header">
+        <Typography variant="body1" color="primary">
+          No preço <span>(</span>$ $ $ <span>$ $)</span>
+        </Typography>
+      </div>
+      {restaurantesNoPreco?.map(restaurante => (
+        <div key={restaurante.ID}>
+          {restaurante.name}
+        </div>
+      ))}
+      <div className="sub-header">
+        <Typography variant="body1" color="primary">
+          Caro, mas vale a pena <span>(</span>$ $ $ $ $<span>)</span>
+        </Typography>
+      </div>
+      {restaurantesCaro?.map(restaurante => (
+        <div key={restaurante.ID}>
+          {restaurante.name}
         </div>
       ))}
     </Container>

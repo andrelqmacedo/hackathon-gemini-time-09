@@ -12,7 +12,7 @@ function RestaurantesPage() {
 
   useEffect(() => {
     getRestaurantes().then((response) => {
-      setNomeCategoria(response.categoria);
+      setNomeCategoria(response.categoria)
       setRestaurantesBaratinho(response.baratinho);
       setRestaurantesNoPreco(response.no_preco);
       setRestaurantesCaro(response.caro);

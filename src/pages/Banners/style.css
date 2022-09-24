@@ -30,7 +30,9 @@
 .full-height .descricao {
   min-height: 100px;
   margin: 12px;
-}
+  font-size: 12px;
+  justify-self: auto;
+} 
 
 .full-height .actions {
   padding-bottom: 15px;

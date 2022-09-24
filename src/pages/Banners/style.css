@@ -19,6 +19,7 @@
 }
 
 .full-height .MuiTypography-h5 {
+
 }
 
 .full-height .subtitle {
@@ -27,7 +28,8 @@
 }
 
 .full-height .descricao {
-  min-height: 140px;
+  min-height: 100px;
+  margin: 12px;
 }
 
 .full-height .actions {
@@ -48,7 +50,9 @@
 }
 
 .full-height .main-image {
+  position: absolute;
   width: 100%;
+  bottom: 0;
 }
 
 .loading {

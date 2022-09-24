@@ -42,6 +42,8 @@ function BannersPage() {
     );
   }
 
+
+
   return (
     <div className="full-height" style={{backgroundColor: selectedBanner['background-color']}}>
       <Container>
@@ -51,8 +53,8 @@ function BannersPage() {
             variant="h5"
             align="center"
             color="primary"
-          >
-            {selectedBanner.nome}
+          >{(selectedBanner.nome.includes("UNTER")) ? "Iteris Food" :
+            selectedBanner.nome }
           </Typography>
         </div>
 
@@ -82,7 +84,7 @@ function BannersPage() {
         </div>
 
       </Container>
-      <img className="main-image" src={selectedBanner.imagem} alt={selectedBanner.nome} />
+      {(selectedBanner.nome.includes("UNTER")) ? "" : <img className="main-image" src={selectedBanner.imagem} alt={selectedBanner.nome}/>}
     </div>
   );
 }

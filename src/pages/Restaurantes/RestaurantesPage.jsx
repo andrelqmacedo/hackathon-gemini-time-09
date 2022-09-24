@@ -33,7 +33,7 @@ function RestaurantesPage() {
       <div className="sub-header">
         <Typography variant="body1" color="primary">
           Baratinho <span>(</span>$ <span>$ $ $ $)</span>
-        </Typography>
+        </Typography>   
       </div>
       {restaurantesBaratinho?.map(restaurante => (
         <div key={restaurante.ID}>

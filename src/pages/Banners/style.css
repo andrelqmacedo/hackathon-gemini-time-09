@@ -52,10 +52,18 @@
 }
 
 .full-height .main-image {
-  position: absolute;
+  position: relative;
   width: 100%;
   bottom: 0;
 }
+
+button,
+.seta
+ {
+  position: relative;
+  z-index: 1;
+}
+
 
 .loading {
   display: flex;

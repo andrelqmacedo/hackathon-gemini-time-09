@@ -67,7 +67,7 @@ function BannersPage() {
         </Typography>
 
         <div className="actions">
-          <Fab color="primary" onClick={() => mudarBanner(-1)} disabled={isFirst}>
+          <Fab className="seta" color="primary" onClick={() => mudarBanner(-1)} disabled={isFirst}>
             <ArrowBackIos />
           </Fab>
           <Button
@@ -78,7 +78,7 @@ function BannersPage() {
             Faça seu Pedido
           </Button>
 
-          <Fab color="primary" onClick={() => mudarBanner(1)} disabled={isLast}>
+          <Fab className="seta" color="primary" onClick={() => mudarBanner(1)} disabled={isLast}>
             <ArrowForwardIos />
           </Fab>
         </div>

@@ -47,7 +47,7 @@ function CategoriasPage() {
 								alt={categoria.name}
 								className="imgCategory"
 							/>
-
+	
 							<Typography className="textNames">{categoria.name}</Typography>
 							<Typography className="total">({categoria.total})</Typography>
 

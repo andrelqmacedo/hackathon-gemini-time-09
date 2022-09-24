@@ -49,6 +49,8 @@ function CategoriasPage() {
 							/>
 
 							<Typography className="textNames">{categoria.name}</Typography>
+							<Typography className="total">({categoria.total})</Typography>
+
 						</div>
 					</Grid>
 				))}
